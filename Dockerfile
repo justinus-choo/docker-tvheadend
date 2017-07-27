@@ -37,6 +37,7 @@ RUN \
 	libtool \
 	libxml2-dev \
 	libxslt-dev \
+	libva-dev \
 	make \
 	mercurial \
 	patch \
@@ -67,6 +68,8 @@ RUN \
 	libssl1.0 \
 	libxml2 \
 	libxslt \
+	libva \
+	libva-intel-driver \
 	linux-headers \
 	pcre2 \
 	perl \
@@ -150,6 +153,7 @@ RUN \
  	--enable-libffmpeg_static \
 	--enable-hdhomerun_client \
 	--enable-libav \
+	--enable-vaapi \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
 	--mandir=/usr/share/man \
