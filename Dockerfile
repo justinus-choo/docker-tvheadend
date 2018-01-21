@@ -163,6 +163,8 @@ RUN \
 	--mandir=/usr/share/man \
 	--prefix=/usr \
 	--sysconfdir=/config && \
+ sed -i -e 's/ffmpeg.libx264.diff/ffmpeg.libx264.diff ffmpeg.libressl.diff/' Makefile.ffmpeg && \
+ cp /tmp/patches/ffmpeg.libressl.diff /tmp/tvheadend/support/patches/ && \
  make && \
  make install && \
  echo "**** build XMLTV ****" && \
